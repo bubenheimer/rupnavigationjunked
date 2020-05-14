@@ -1,0 +1,27 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.bubenheimer.rupnavigationjunked">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,MissingApplicationIcon"
+        android:theme="@style/Theme.MaterialComponents.NoActionBar"
+        android:label="R Junked Navigation"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChildActivity"
+            android:parentActivityName=".MainActivity"
+            />
+    </application>
+</manifest>
