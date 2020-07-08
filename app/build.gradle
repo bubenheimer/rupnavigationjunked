@@ -1,11 +1,11 @@
 apply plugin: "com.android.application"
 
 android {
-    setCompileSdkVersion(29)
+    setCompileSdkVersion(30)
 
     defaultConfig {
         setMinSdkVersion(23)
-        setTargetSdkVersion(29)
+        setTargetSdkVersion(30)
     }
 
     compileOptions {
